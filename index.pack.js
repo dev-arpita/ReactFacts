@@ -446,23 +446,33 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
-Challenge:
-
-- Move the `footer` into its own component called "Footer"
-  and render that component inside the Page component.
-- Move the `h1` and `ol` together into another component
-  called "MainContent" and render inside Page as well.
-*/
-
 function Header() {
     return _react2.default.createElement(
         "header",
         null,
         _react2.default.createElement(
             "nav",
-            null,
-            _react2.default.createElement("img", { src: "./react-logo.png", width: "40px" })
+            { className: "nav" },
+            _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
+            _react2.default.createElement(
+                "ul",
+                { className: "nav-items" },
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Pricing"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "About"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Contact"
+                )
+            )
         )
     );
 }
