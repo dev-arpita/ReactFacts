@@ -1,8 +1,14 @@
 body {
     margin: 0;
+<<<<<<< HEAD
     overflow: hidden;
 }
 
+=======
+    padding: 0;
+    overflow: hidden;
+}
+>>>>>>> bbce1fb44d45a38e48e828cadeed6ef68e0065a9
 .nav {
     display: flex;
     justify-content: space-between;
