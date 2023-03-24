@@ -5,6 +5,8 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
+    height: 100vh;
+    background-color: #282D35;
 }
 
 nav {
@@ -15,7 +17,8 @@ nav {
     padding: 30px 25px;
 }
 
-.nav--logo_text, .nav--title {
+.nav--logo_text,
+.nav--title {
     margin: 0;
 }
 
@@ -36,29 +39,28 @@ nav {
     margin-right: 7px;
 }
 
-/*Main*/
-
-.main {
-    background: #282D35;
-    height: 100vh;
-    color: #DEEBF8;
-    padding: 3em 2em;
+main {
+    padding: 57px 27px;
+    color: white;
 }
-h1 {
+
+.main--title {
     margin: 0;
-    padding-bottom: 1em;
-    font-size: 2.5em;
-    letter-spacing: -.05em
+    font-size: 39px;
+    letter-spacing: -0.05em;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
+.main--facts {
+    margin-top: 46px;
+    max-width: 400px;
 }
 
-li::marker {
-  content: "• ";
-  color: #00D8FF;
-  margin-right: .5em;
-  font-size: 2em;
+.main--facts>li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.main--facts>li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
 }
